@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "DollarX Indicator",
+  "short_name": "DollarX",
+  "description": "Institutional XAUUSD (Gold) AI Indicator, Multi-Timeframe Signal Generator, Risk & Pips Calculator, and Macroeconomic Calendar.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/assets/aistudio/IMG-20261102-WA0025_4e7e5b70.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/aistudio/IMG-20261102-WA0025_4e7e5b70.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

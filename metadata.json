@@ -1,0 +1,6 @@
+{
+  "name": "AurumQuant XAUUSD Terminal",
+  "description": "Institutional XAUUSD (Gold) AI Indicator, Multi-Timeframe Signal Generator, Risk & Pips Calculator, and Macroeconomic Calendar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

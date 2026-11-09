@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "ClientAccount": {
+      "title": "ClientAccount",
+      "description": "Registered DollarX Indicator client license and account record managed by the Admin across devices.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique client record identifier (e.g., DX-1001)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Client full name or account holder identifier"
+        },
+        "brokerId": {
+          "type": "string",
+          "description": "MT4/MT5 Broker ID or trading account number"
+        },
+        "accessCode": {
+          "type": "string",
+          "description": "Client access code or license key"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"],
+          "description": "Whether the client license is active and permitted to log in"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation date string (YYYY-MM-DD)"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Unix timestamp in milliseconds of last modification"
+        }
+      },
+      "required": ["id", "name", "brokerId", "accessCode", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/clients/{clientId}": {
+      "schema": {
+        "$ref": "#/entities/ClientAccount"
+      },
+      "description": "Global synchronized collection of DollarX Indicator client accounts."
+    }
+  }
+}
